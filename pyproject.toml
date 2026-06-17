@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gfmkit"
+version = "0.1.0"
+description = "Graph Foundation Model toolkit for zero-shot and transfer link-prediction experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "torch",
+    "torch-geometric",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+graphcl = ["PyGCL"]
+dev = ["pytest"]
+
+[project.scripts]
+gfmkit = "gfmkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
