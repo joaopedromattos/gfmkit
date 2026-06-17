@@ -1,6 +1,8 @@
-# gfmkit
+# GFMKit - Graph Foundation Models public library
 
-`gfmkit` is an importable Graph Foundation Model toolkit for the ZSLP link-prediction benchmark. It provides one registry and API for training, adapting, and exporting embeddings from the project’s Graph Foundation Model baselines while keeping the original model repositories untouched.
+`gfmkit` is an importable Graph Foundation Model toolkit for the benchmarking. It provides one registry and API for training, adapting, and exporting embeddings from the project’s Graph Foundation Model baselines while keeping the original model repositories untouched.
+
+The main goal of the project is to standardize the implementation of GFM baselines and streamline it through a single API.
 
 ## Install
 
